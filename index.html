@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery-One Page Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Libre+Caslon+Display&family=Poiret+One&display=swap" rel="stylesheet">
+    <style></style>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#nav-scroll">
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light" id="nav-scroll">
+      <div class="container">
+        <a href="#" class="navbar-brand">Alannahs Blooms</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navBar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#gallery" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#blog" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="d-flex min-vh-100 flex-column justify-content-center align-items-center">
+      <h1 class="fw-bolder display-1 mb-3">Alannahs Blooms</h1>
+      <h6 class="fs-3 text-capitalize mb-4">Need a last-minute gift? We’ve got you covered!</h6>
+      <a href="#gallery" class="btn btn-danger rounded-pill">Order Now!</a>
+    </section>
+    <section id="about" class="container py-5">
+      <div class="text-center py-5">
+        <h2 class="fw-bolder text-uppercase">Our Story</h2>
+        <p>Welcome to Alannahs Blooms, where flowers are bloomed with love, creativity, and passion! </p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <img src="image/about.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-7 offset-lg-1">
+          <p class="lh-lg">Since 2002, we’ve been dedicated to bringing joy to Cork City through stunning floral arrangements, exceptional customer service, and a deep-rooted love for natural beauty of flowers.</p>
+          <p>Founded by Alannah Maguire, a lifelong flower enthusiast, Alannah began as a small dream to share the magic of flowers with our community. Over the years, we’ve grown into Cork City's favorite florist, known for our:</p>
+          <p class="fw-bold fs-4" style="text-align: center" ;>Play our delivery game to win a discount!</p>
+          <div id="game">
+            <div id="delivery-guy"></div>
+            <div id="fire-hydrant"></div>
+          </div>
+          <p style="text-align: center;">Press play and then hit any key to jump oberteh fire hydrants.</p>
+          <h1 id="score">0</h1>
+          <button id="start-game" onclick="strtGame()">Play</button>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" class="bg-dark py-5">
+      <div class="container">
+        <div class="text-center py-5 text-white">
+          <h2 class="fw-bolder text-uppercase">Bouquet gallery</h2>
+          <p>At Alannahs Blooms, we believe flowers have the power to uplift, inspire, and connect people. Whether you’re celebrating a milestone, expressing sympathy, or simply brightening someone’s day, we’re here to make your floral experience unforgettable. </p>
+          <div class="row pb-5">
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="box">
+                <div class="box-img">
+                  <img src="image/img1.jpg" alt="" class="img-fluid img-thumbnail">
+                </div>
+                <div class="content">
+                  <h3 class="title">Natural Blossoms</h3>
+                  <hr>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="box">
+                <div class="box-img">
+                  <img src="image/img2.jpg" alt="" class="img-fluid img-thumbnail">
+                </div>
+                <div class="content">
+                  <h3 class="title">Birthday Bouquets</h3>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="box">
+                <div class="box-img">
+                  <img src="image/img3.jpg" alt="" class="img-fluid img-thumbnail">
+                </div>
+                <div class="content">
+                  <h3 class="title">Thank You Gifts</h3>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="box">
+                <div class="box-img">
+                  <img src="image/img4.jpg" alt="" class="img-fluid img-thumbnail">
+                </div>
+                <div class="content">
+                  <h3 class="title">Summer Blossoms</h3>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="box">
+                <div class="box-img">
+                  <img src="image/img5.jpg" alt="" class="img-fluid img-thumbnail">
+                </div>
+                <div class="content">
+                  <h3 class="title">Potted Flowers</h3>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="box">
+                <div class="box-img">
+                  <img src="image/img6.jpg" alt="" class="img-fluid img-thumbnail">
+                </div>
+                <div class="content">
+                  <h3 class="title">Wedding Bouquets</h3>
+                  <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog" class="container py-5">
+      <div class="text-center py-5">
+        <h2 class="fw-bolder text-uppercase">Blog</h2>
+        <p>Subscribe and get up to date news on trends and events.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-med-6 mb-4">
+          <div class="card">
+            <img src="image/img7.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center py-2">Personalized service</h5>
+              <p class="card-text">Whether it’s a wedding, birthday, or just because, we create flowers that speak from the heart.</p>
+              <a href="#" class="btn btn-light">Read more...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-med-6 mb-4">
+          <div class="card">
+            <img src="image/img6.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center py-2">Preserve Your Wedding Bouquet</h5>
+              <p class="card-text">Our team has a keen eye for design and trends. We work directly with growers to ensure longevity and beauty </p>
+              <a href="#" class="btn btn-light">Read more...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-med-6 mb-4">
+          <div class="card">
+            <img src="image/img5.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center py-2">Eco-friendly practices</h5>
+              <p class="card-text">We source sustainable and locally grown flowers whenever possible.</p>
+              <a href="#" class="btn btn-light">Read more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="contact" class="bg-dark py-5">
+      <div class="container">
+        <div class="text-center py-5 text-white">
+          <h2 class="fw-bolder text-uppercase">Contact Us</h2>
+          <p>Get in touch, same day response guaranteed.</p>
+        </div>
+        <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-6 col-xxl-5 mx-auto">
+          <form action="" class="text-white">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" minlength="3" maxlength="20" required">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required ">
+																													</div>
+																													<div class=" mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Message</label>
+              <textarea name="message" rows="10" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn-danger btn-lg">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-light">
+      <div class="container text-center">
+        <p class="mb-0 py-3 fs-5"> All Rights Reserved <a href="#" class="text-danger fst-italic">My Website</a>
+          <br>
+          <a href="http://www.freepik.com/" class="text-danger fst-italic">Images from FreePik</a>
+        </p>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

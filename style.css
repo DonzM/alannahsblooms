@@ -1,0 +1,164 @@
+@import url(css/bootstrap.min.css);
+
+body {
+    font-family: "Libre Caslon Display";
+    font-size: larger;
+}
+
+h5 {
+    font-family: "Poiret One";
+    font-weight: bold;
+
+}
+
+.fleur-de-leah-regular {
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .poiret-one-regular {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .libre-caslon-display-regular {
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .navbar-light .navbar-nav .nav-link{
+    color: #000 ; }
+
+#home {
+    background-image: url(image/hero-bg.jpg);
+}
+
+.navbar-brand{
+    font-family: "Fleur De Leah";
+    font-size: 3rem;
+    color: darkgreen;
+}
+
+.nav-link.active{
+    color: red !important; 
+}
+
+/* Box effect styling */
+
+.box{
+    border: 10px solid whitesmoke;
+    box-shadow: 0 0 5px grey;
+    overflow: hidden;
+    position: relative;
+}
+
+.box .box-img img{
+    width: 100%;
+    object-fit: cover;
+    transform: scale (1,1);
+    transition: transform 0.5s linear;
+}
+
+.box:hover .box-img img{
+    transform: scale(1.1,1.1);
+}
+
+.box .content {
+    background: rgba(255,255,255, 0.8);
+    border: 1px solid #bebbbb;
+    width: 100%;
+    height: 100%;
+    padding: 35px 25px;
+    position: absolute;
+    top:0;
+    text-align:center;
+    opacity: 0;
+    transition: opacity 0.30s linear, border 0.20s ease-in-out;
+}
+
+.box:hover .content{
+    opacity: 1;
+    border: 8px solid #17dddd;
+}
+
+.box .title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #01172b;
+    margin: 0;
+    position: relative;
+    top: -1px;
+    transition: top 0.50s ease 0s, opacity 0.10s ease-in-out 0s ;
+}
+
+.box hr{
+    color: black;
+    font-weight: bolder;
+}
+ 
+
+
+/* Game Styling */
+#score{
+    text-align: center;
+}
+
+#start-game{
+    margin-left: 50%;
+}
+
+
+
+
+#game{
+    width: 600px;
+    height: 300px;
+    border: 2px solid grey;
+    margin: auto;
+   background-image: url(image/city-game-background.jpg);
+   background-size: cover;
+  
+}   
+
+#delivery-guy{
+   height: 75px;
+   width: 75px;
+   position: relative;
+   top: 200px;
+  background-image: url(image/flower-delivery-guy.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  }
+
+#fire-hydrant{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 150px;
+    left: 550px;
+   background-image: url(image/fire-hydrant.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   /*animation: fireHydrant 1.33s infinite;*/
+ }
+
+ @keyframes fireHydrant  {
+    0%{left: 550px;}
+    100%{left: -50px;}
+ }
+ 
+ .jump-action{
+    animation: jump 0.75s;
+ }
+
+ @keyframes jump {
+    0%{top: 200px;}
+    50%{top: 75px;}
+    75%{top: 75px;}
+    100%{top: 200px;}    
+ }
+
