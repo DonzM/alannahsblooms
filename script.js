@@ -12,7 +12,7 @@ function jump() {
     }, 500);
 }
 
-document.addEventListener('keypress', () => {
+document.addEventListener('keydown', () => {
     jump();
 })
 
@@ -26,10 +26,10 @@ function strtGame() {
         const deliveryGuyTop = parseInt(window.getComputedStyle(deliveryGuy).getPropertyValue('top'));
         const fireHydrantLeft = parseInt(window.getComputedStyle(fireHydrant).getPropertyValue('left'));
         //console.log(deliveryGuyTop);
-        //console.log(fireHydrantLeft);
-        if (fireHydrantLeft < 0) {
+        console.log(fireHydrantLeft);
+        if (fireHydrantLeft < 0 || fireHydrantLeft > 599) {
             fireHydrant.style.display = "none";
-
+s
         } else {
             fireHydrant.style.display = "";
         }

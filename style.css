@@ -114,8 +114,8 @@ h5 {
 
 
 #game{
-    width: 600px;
-    height: 300px;
+    max-width: 600px;
+    min-height: 300px;
     border: 2px solid grey;
     margin: auto;
    background-image: url(image/city-game-background.jpg);
